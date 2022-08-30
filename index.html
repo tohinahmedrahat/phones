@@ -45,6 +45,7 @@
         </div>
       </nav>
     </header>
+    <!-- diplay phones  -->
     <section class="bg-dark mt-4 container">
       <h1 class="text-center text-light">find your best phone</h1>
       <div class="input-group py-3 mx-auto w-50">
@@ -56,12 +57,18 @@
           aria-label="phone name"
           aria-describedby="basic-addon1"
         />
-        <button id="search-btn" type="button" class="btn btn-primary">Primary</button>
+        <button id="search-btn" type="button" class="btn btn-primary">Search</button>
       </div>
       <!-- show all phones -->
       <div id="show-phones" class="row row-cols-1 py-3 row-cols-md-3 g-4">
-    
       </div>
+      <div id="error" class="text-center d-none">
+        <p class="text-danger fw-bold text-capitalize fs-4">can't find any result</p>
+      </div>
+      <div id="show" class="text-center d-none">
+        <button id="show-btn" type="button" class="btn btn-primary">Show All</button>
+      </div>
+
     </section>
     <!-- bootstrap javascript cdn  -->
     <script
